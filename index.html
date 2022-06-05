@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      #container {
+        margin: auto;
+
+        width: 70%;
+
+        border: 10px solid black;
+
+        padding: 10px;
+      }
+
+      #title {
+        font-size: 40px;
+
+        text-align: center;
+
+        color: white;
+      }
+
+      body {
+        background-color: gray;
+      }
+
+      #survey-form {
+        text-align: center;
+        
+        font-size: 20px;
+      }
+
+      #description {
+        width: 100px;
+
+        height: 200px;
+
+        text-align: center;
+
+        line-height: 20px;
+
+        font-weight: bold;
+
+        margin: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div>
+        <h1 id="title">Take a moment of your time?</h1>
+      </div>
+
+      <div>
+        <p id="description">
+          Hello please fill out the below information to receive 10% discount
+          code.
+        </p>
+      </div>
+
+      
+        <form id="survey-form">
+          <label id="name-label" for="name">Enter name:</label><br />
+
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="John Doe"
+            required
+          /><br />
+
+          <label id="email-label" for="email">Enter email:</label><br />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="www.johndoe@yahoo.com"
+            required
+            pattern="www..+"
+          /><br />
+
+          <label id="number-label" for="number">Age:</label><br />
+
+          <input
+            type="number"
+            id="number"
+            size="6"
+            min="18"
+            max="99"
+            placeholder="18 min"><br><br>
+
+        
+          <label id="question1">Which brand do you prefer?</label><br>
+
+          <select name="dropdown" id="dropdown">
+            <option value="MSI">MSI</option>
+
+            <option value="alienware">Alienware</option>
+
+            <option value="apex">Apex</option>
+
+            <br><br></select><br><br>
+        
+
+          <label for="question2">What store do you prefer?</label><br />
+
+          <label class="radio-inline">
+            <input type="radio" name="store" value="1offset"/>MSI<br />
+          </label>
+
+          <label class="radio-inline">
+            <input type="radio" name="store" value="2offset"/>Newegg </label
+          ><br />
+
+          <label class="radio-inline">
+            <input type="radio" name="store" value="3offset" />Best Buy
+          </label>
+
+          <br /><br />
+
+          <label for="question3">How much are you looking to spend?</label
+          ><br />
+
+          <input type="checkbox" id="lowest" name="lowest" value="range1" />
+
+          <label for="lowest">100-200</label><br />
+
+          <input type="checkbox" id="middle" name="middle" value="range2" />
+
+          <label for="middle">300-400</label><br />
+
+          <input type="checkbox" id="highest" name="highest" value="range3" />
+
+          <label for="highest">500-600</label><br />
+
+          <br /><br />
+
+          <!--option disable selected value :how to remove placeholder in dropbox-->
+        
+
+        <textarea name="message" rows="10" cols="30">
+
+For additional questions please fillout.
+
+      </textarea
+        >
+
+        <span>
+          <input type="submit" id="submit" value="Submit" />
+          </span>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
